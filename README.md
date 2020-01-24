@@ -32,11 +32,11 @@ To compile symbol-server source code, follow the [building instructions](BUILDIN
 
 ## Running symbol-server
 
-symbol-server executable can be used either to run different types of nodes and to launch new networks. Find in this section the instructions on how to run symbol-server.
+symbol-server executable can be used either to run different types of nodes or to launch new networks. This section contains the instructions on how to run the symbol-server for various purposes.
 
 ### Test Network Node
 
-Developers can deploy net test nodes to experiment with the offered transaction set in a live network without the loss of valuable assets. 
+Developers can deploy test net nodes to experiment with the offered transaction set in a live network without the loss of valuable assets. 
 
 To run a test net node, follow [this guide](https://nemtech.github.io/guides/network/running-a-test-net-node.html#running-a-test-net-node).
 
@@ -52,7 +52,7 @@ To run a private test net, follow [this guide](https://nemtech.github.io/guides/
 
 ### Private Network
  
-Instructions on how to launch a secure and production-ready private chain will follow.
+Instructions on how to launch a secure and production-ready private chain will be released here.
 
 ## Contributing
 
