@@ -15,10 +15,10 @@ symbol-server code is organized as follows:
 
 | Folder name | Description |
 | -------------|--------------|
-|/extensions | Modules that add features to the bare symbol-server. They range from extensions that are critical, like consensus and networking to optional extensions like ZMQ messaging and other API conveniences. |
-| /external | Implementations of external algorithms used (sha3, ripemd160, ed25519).  |
+|/extensions | Modules that add features to the bare symbol-server. These capabilities are all optional because none of them impact consensus. |
+| /external | External dependencies that are built with the server. |
 | /plugins | Modules that introduce new and different ways to alter the chain's state via transactions. |
-|/resources | Configurable node and network properties. |
+|/resources | Default properties. These can be configured per network and node. |
 |/scripts | Utility scripts for developers. |
 |/sdk | Reusable code used by tests and tools. |
 | /seed | Nemesis blocks used in tests. |
