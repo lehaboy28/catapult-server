@@ -22,6 +22,7 @@
 #include "catapult/crypto/Hashes.h"
 #include "catapult/crypto/KeyUtils.h"
 #include "catapult/utils/HexParser.h"
+#include "catapult/utils/MemoryUtils.h"
 #include "tests/test/nodeps/KeyTestUtils.h"
 #include "tests/TestHarness.h"
 
@@ -47,7 +48,7 @@ namespace catapult { namespace crypto {
 
 			// inline first iteration
 			uint32_t counter = 1;
-			std::memcpy(buffer.data(), label.pData, label.Size);
+			utils::memcpy_cond(buffer.data(), label.pData, label.Size);
 			std::memcpy(buffer.data() + label.Size, &counter, sizeof(uint8_t));
 
 			Hash256 previousOkm;
